@@ -23,8 +23,13 @@ jobs:
           name: cypress-screenshots
           path: cypress/screenshots
       # Test run video was always captured, so this action uses "always()" condition
+<<<<<<< HEAD
       - uses: actions/upload-artifact@v5
         if: always()
+=======
+      - uses: actions/upload-artifact@v3
+        if: failure()
+>>>>>>> 0abd6aeb46ae4cc0a2c933fe8bf6bf0c9d4e2ff8
         with:
           name: cypress-videos
           path: cypress/videos
