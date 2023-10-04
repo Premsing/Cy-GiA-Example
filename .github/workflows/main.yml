@@ -15,7 +15,7 @@ jobs:
           record: true
         env:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
             # after the test run completes
       # store videos and any screenshots
       # NOTE: screenshots will be generated only if E2E test failed
