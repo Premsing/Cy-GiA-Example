@@ -9,9 +9,10 @@ jobs:
       # Install NPM dependencies, cache them correctly
       # and run all Cypress tests
       # https://github.com/cypress-io/github-action
-      - name: Cypress run --browser firefox
+      - name: Cypress run
         uses: cypress-io/github-action@v5
         with:
+        browser: firefox
           record: true
         env:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
